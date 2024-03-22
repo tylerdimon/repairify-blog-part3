@@ -20,3 +20,8 @@ docker-compose up -d # detached mode
 docker-compose up --build
 docker-compose down
 ```
+
+```bash
+fly launch
+fly apps destroy repairify-blog-part3
+```
