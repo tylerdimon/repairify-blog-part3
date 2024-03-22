@@ -1,0 +1,10 @@
+FROM mcr.microsoft.com/playwright
+
+WORKDIR /tests
+
+COPY blog/tests/e2e.spec.js .
+COPY blog/package.json .
+
+RUN npm install --legacy-peer-deps
+
+CMD ["npx", "playwright", "test"]
