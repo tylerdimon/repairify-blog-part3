@@ -10,8 +10,8 @@ docker run -d --name blog-server -p 80:80 gatsby-blog
 ```
 
 ```bash
-docker build -t gatsby-blog .
-docker run -d --name blog-server -p 80:80 gatsby-blog
+docker build -f Dockerfile.test -t blog-test .
+docker run -d --name tests blog-test
 ```
 
 ```bash
